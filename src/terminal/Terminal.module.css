@@ -86,4 +86,10 @@
   .terminal {
     padding: 14px 16px;
   }
+
+  .legendBtn {
+    padding: 4px 10px;
+    font-size: 13px;
+    min-height: 32px;
+  }
 }
