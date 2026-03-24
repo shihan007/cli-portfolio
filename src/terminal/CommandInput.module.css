@@ -1,0 +1,35 @@
+.promptRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+  flex-shrink: 0;
+}
+
+.prompt {
+  color: var(--accent);
+  user-select: none;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.separator {
+  color: var(--text);
+  user-select: none;
+  font-size: 14px;
+  opacity: 0.6;
+  margin-right: 2px;
+}
+
+.input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-h);
+  font-family: var(--mono);
+  font-size: 16px;
+  flex: 1;
+  caret-color: var(--accent);
+  min-width: 0;
+}

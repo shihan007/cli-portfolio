@@ -1,0 +1,93 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  font-family: var(--mono);
+}
+
+.scoreBar {
+  display: flex;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  padding: 10px 14px;
+  flex-shrink: 0;
+}
+
+.val {
+  color: #fff;
+  font-weight: 700;
+}
+
+.gameArea {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 1px;
+  background: #1a1a1a;
+  width: 100%;
+  height: 100%;
+}
+
+.cell {
+  display: block;
+}
+
+.empty {
+  background: #0a0a0a;
+}
+
+/* All pieces — pure white, Game Boy retro style */
+.p1 { background: #fff; }
+.p2 { background: #fff; }
+.p3 { background: #fff; }
+.p4 { background: #fff; }
+.p5 { background: #fff; }
+.p6 { background: #fff; }
+.p7 { background: #fff; }
+
+/* Overlay (idle + gameover) */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.overlay:hover .overlayText {
+  opacity: 0.75;
+}
+
+.overlayText {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.overlaySub {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+}
+
+/* Controls hint */
+.controls {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  padding: 8px 14px;
+  flex-shrink: 0;
+}

@@ -1,0 +1,162 @@
+.block {
+  border-left: 2px solid var(--border);
+  padding: 4px 0 4px 14px;
+  margin: 2px 0 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* About layout */
+.aboutLayout {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 2px 0 14px;
+}
+
+.aboutLayout .block {
+  margin: 0;
+}
+
+.binaryArtWrap {
+  flex-shrink: 0;
+  line-height: 0;
+}
+
+/* Welcome screen */
+.welcome {
+  margin-bottom: 24px;
+}
+
+.ascii {
+  color: var(--accent);
+  font-size: 13px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+.welcomeName {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin: 0;
+}
+
+.welcomeTitle {
+  color: var(--text);
+  margin: 2px 0 10px;
+  font-size: 14px;
+}
+
+.welcomeMeta {
+  color: var(--text);
+  font-size: 13px;
+  margin: 0 0 12px;
+  opacity: 0.6;
+}
+
+.welcomeHint {
+  color: var(--text);
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Shared */
+.cmd {
+  color: var(--accent);
+  font-family: var(--mono);
+  white-space: pre;
+}
+
+.label {
+  color: var(--accent);
+  font-family: var(--mono);
+  display: inline-block;
+  min-width: 10ch;
+  opacity: 0.8;
+}
+
+.dim {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.bio {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 60ch;
+  margin-top: 6px;
+}
+
+.link {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: var(--error);
+  margin: 2px 0 14px;
+  font-size: 14px;
+}
+
+/* Help table */
+.helpTable {
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.helpTable td {
+  padding: 2px 16px 2px 0;
+  vertical-align: top;
+}
+
+/* Skills */
+.block p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-h);
+}
+
+/* Work / Projects */
+.projectEntry {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.projectEntry:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.projectName {
+  font-weight: 600;
+  color: var(--text-h);
+  font-size: 15px;
+}
+
+.badge {
+  font-size: 13px;
+}
+
+.progress {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--accent);
+  margin: 2px 0 !important;
+}
+
+.tech {
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0.7;
+  margin: 0 !important;
+}

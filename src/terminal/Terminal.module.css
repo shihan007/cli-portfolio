@@ -1,0 +1,89 @@
+.terminal {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  height: 100dvh;
+  background: var(--bg);
+  font-family: var(--mono);
+  color: var(--text-h);
+  padding: 20px 24px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  cursor: text;
+  width: 100%;
+}
+
+.outputArea {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.outputArea::-webkit-scrollbar {
+  width: 4px;
+}
+
+.outputArea::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.commandEcho {
+  color: var(--accent);
+  font-size: 14px;
+  margin: 10px 0 2px;
+  opacity: 0.9;
+}
+
+.commandEcho::before {
+  content: '$ ';
+  color: var(--text);
+  opacity: 0.5;
+}
+
+.tabHint {
+  display: flex;
+  gap: 16px;
+  margin: 2px 0 14px;
+  flex-wrap: wrap;
+}
+
+.tabOption {
+  color: var(--accent);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 10px 0 8px;
+  border-top: 1px solid var(--border);
+}
+
+.legendBtn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.legendBtn:hover {
+  border-color: var(--accent-border);
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .terminal {
+    padding: 14px 16px;
+  }
+}
