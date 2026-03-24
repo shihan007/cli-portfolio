@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background: var(--bg);
+  justify-content: center;
+}
+
+.inner {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.terminalPane {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 360px;
+  flex-shrink: 0;
+  border-left: 1px solid var(--border);
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Tablet: shrink Tetris panel */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 260px;
+  }
+}
+
+/* Mobile: hide Tetris panel, full-width terminal */
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+}
