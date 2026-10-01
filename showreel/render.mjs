@@ -58,8 +58,8 @@ if (stillsArg) {
     '-y', '-loglevel', 'error',
     '-f', 'image2pipe', '-framerate', String(FPS), '-c:v', 'png', '-i', '-',
     '-i', wav,
-    '-c:v', 'libx264', '-preset', 'slow', '-crf', '17', '-pix_fmt', 'yuv420p',
-    '-profile:v', 'high', '-tune', 'grain', '-movflags', '+faststart',
+    '-c:v', 'libx264', '-preset', 'slow', '-crf', '20', '-pix_fmt', 'yuv420p',
+    '-profile:v', 'high', '-movflags', '+faststart',
     '-c:a', 'aac', '-b:a', '256k', '-shortest', mp4,
   ], { stdio: ['pipe', 'inherit', 'inherit'] });
   const done = new Promise((res, rej) => ff.on('close', c => (c ? rej(new Error(`ffmpeg exited ${c}`)) : res())));
